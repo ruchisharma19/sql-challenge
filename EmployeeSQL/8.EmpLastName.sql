@@ -2,4 +2,5 @@
 
 select last_name as "Last Name", count(last_name) as "Count"
 from public.employees
-group by last_name 
+group by last_name
+order by count(last_name) desc
